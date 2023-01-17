@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <title>LeoTraining Fuzzy search with auto suggestions</title>
+
+    <link href="books.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.jquery.min.js"></script>
+
+    <!--script src="../dist/FuzzySearch.min.js"></script-->
+   
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/list.fuzzysearch.js/0.1.0/list.fuzzysearch.min.js"></script> -->
+
+
+</head>
+<body>
+
+    <h1>Fuzzy search with auto suggestions and links<br/> 
+        Proof of Concept / Demo</h1>
+
+    <div class="input">
+        <label for="q"><span>Enter fuzzy search query:</span><input type="text" class="search" id="q" value="book title, author, summary"></label>
+        <div class="info"></div>
+    </div>
+    
+    <div class="results">
+        <div>
+            <h3>Visual:</h3>
+            <div class="visual"></div>
+        </div>
+        <div>
+            <h3>Results json:</h3>
+            <textarea cols="30" rows="10" class="result"></textarea>
+        </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.js'></script>
+    <script src="books.js"></script>
+</body>
+</html>
